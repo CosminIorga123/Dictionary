@@ -1,0 +1,28 @@
+﻿<Window x:Class="Dictionary.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dictionary"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Name="Dictionary" Content="Dictionary" Grid.Column="1" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="35" FontWeight="Black"/>
+        <Label Name="Choice" Content="Choose module:" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="25" FontWeight="Bold"/>
+        <Button Name="AdminButton" Content="Admin" Grid.Column="1" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="25" FontWeight="Bold" Height="50" Width="140" Click="Admin_Click"/>
+        <Button Name="SearchBtn" Content="Search" Grid.Column="1" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="25" FontWeight="Bold" Height="50" Width="140" Click="SearchBtn_Click"/>
+        <Button Name="Game" Content="Game" Grid.Column="1" Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="25" FontWeight="Bold" Height="50" Width="140" Click="Game_Click"/>
+    </Grid>
+</Window>

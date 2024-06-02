@@ -1,0 +1,33 @@
+﻿<Window x:Class="Dictionary.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dictionary"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="450" Width="800">
+    <Window.DataContext>
+        <local:WordList/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Name="Dictionary" Content="Dictionary" Grid.Column="1" Grid.Row="0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="35" FontWeight="Black"/>
+        <Image Name="Image" Source="./Resources/search.png" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Center" Width="120" Height="120" Visibility="Hidden"/>
+        <Label Name="Description" Content="Description" Grid.Row="1" Grid.Column="0" HorizontalContentAlignment="Center"   VerticalAlignment="Center" HorizontalAlignment="Center" Width="500" Grid.ColumnSpan="3" FontSize="25" FontWeight="DemiBold" Foreground="DarkBlue"  />
+        <TextBox Name="Answer" Text="Your guess" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Height="30" Width="200" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="15" FontWeight="SemiBold"  FontStyle="Italic" Foreground="Gray" MouseEnter="Answer_MouseEnter" MouseLeave="Answer_MouseLeave"/>
+        <Button Name="OkBtn" Content="OK" Height="30" Width="100" Grid.Column="1" FontWeight="Bold" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="OkBtn_Click" />
+        <Label Name="AnswerLbl" Content="Correct!" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold" Foreground="Green" FontSize="15" Visibility="Hidden"/>
+        <Button Name="NextBtn" Content="Next" Height="30" Width="100" Grid.Column="1" FontWeight="Bold" Grid.Row="2" Click="NextBtn_Click"/>
+        <Button Name="BackBtn" Content="Back" Grid.Row="2" Width="100" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="15" FontWeight="Bold" Click="BackBtn_Click"  Margin="10,66,0,0"/>
+
+    </Grid>
+</Window>

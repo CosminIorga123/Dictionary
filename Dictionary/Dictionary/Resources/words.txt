@@ -1,0 +1,8 @@
+School,Place where students go,Places,./Resources/default.jpg
+Dog,Man's best friend,Animals,./Resources/default.jpg
+Pizza,Italian food,Food,C:\Users\Cosmin\Desktop\Proiecte\An 2\Sem 2\MAP\Dictionary\Dictionary\Dictionary\Resources\pizza.jpg
+Phone,Device used for making calls,Tech,C:\Users\Cosmin\Desktop\Proiecte\An 2\Sem 2\MAP\Dictionary\Dictionary\Dictionary\Resources\phone.jpg
+Plane,Way of transport by air,Transportation,C:\Users\Cosmin\Desktop\Proiecte\An 2\Sem 2\MAP\Dictionary\Dictionary\Dictionary\Resources\plane.jpg
+Chocolate,Dessert obtained from cocoa seeds,Food,./Resources/default.jpg
+Tiger,Jungle animal,Animals,C:\Users\Cosmin\Desktop\Proiecte\An 2\Sem 2\MAP\Dictionary\Dictionary\Dictionary\Resources\printer.jpg
+Printer,Device,Tech,./Resources/default.jpg
